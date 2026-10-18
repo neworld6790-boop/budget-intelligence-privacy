@@ -10,7 +10,7 @@
 <body>
 <main>
 <h1>Budget Intelligence Privacy Policy</h1>
-<p class="meta">Last updated: 16 October 2026</p>
+<p class="meta">Last updated: 17 October 2026</p>
 
 <h2>Introduction</h2>
 <p>Budget Intelligence is a budgeting app provided by Akil Ramcharitar. This policy explains what information the app handles, where it is stored, and the choices you have. By using Budget Intelligence you agree to this policy.</p>
@@ -27,6 +27,7 @@
 <tr><td>Onboarding answers (why and how often you budget, experience level)</td><td>Your device only, encrypted</td><td>Multiple-choice answers, not free text.</td></tr>
 <tr><td>Profile: display name, avatar or photo, card colour, theme, language, default currency</td><td>Your device only</td><td>Never uploaded to our servers.</td></tr>
 <tr><td>Reward and streak progress</td><td>Your device only</td><td>Never uploaded to our servers.</td></tr>
+<tr><td>Smart mode answer reports you choose to send: reason, optional comment, and the question and answer you report</td><td>Cloud Firestore, linked to your account</td><td>Sent only when you tap "Report this answer". Deleted with your account.</td></tr>
 <tr><td>Remembered sign-in email, if you tick "remember me"</td><td>Your device only</td><td>Excluded from Android backup.</td></tr>
 <tr><td>Receipt photos</td><td>Not stored</td><td>Text is read on your device, then the photo is deleted straight away.</td></tr>
 </tbody></table></div>
@@ -72,10 +73,11 @@
 <h2 id="delete">Data retention and deleting your account</h2>
 <p>We keep your account and budget data until you delete your account. To delete it, go to Settings and choose "Delete my account and data", then type DELETE to confirm. This permanently removes:</p>
 <ol>
-<li>All your budgets and spending in Firestore, and your user record.</li>
+<li>All your budgets and spending in Firestore, any Smart mode answer reports you sent, and your user record.</li>
 <li>All data on your device: goals, rewards, onboarding answers, profile, settings, remembered email and any custom avatar photo.</li>
 <li>Your Firebase Authentication account. You may be asked to sign in again first.</li>
 </ol>
+<p>Reports you send about a Smart mode answer, including the question and answer you report, are stored so we can review them, and are deleted together with your account.</p>
 <p>Deletion cannot be undone. Logging out alone does not delete anything. Uninstalling the app removes the data on your device but not your cloud data.</p>
 <p>If you cannot open the app, email <a href="mailto:neworld6790@gmail.com">neworld6790@gmail.com</a> from your account email address and ask us to delete your account. We will respond within 30 days. Google may take some time to fully remove deleted data from its backups. See also the <a href="delete-account.html">account deletion page</a>.</p>
 
